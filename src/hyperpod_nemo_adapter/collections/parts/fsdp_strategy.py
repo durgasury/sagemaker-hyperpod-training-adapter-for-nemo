@@ -48,11 +48,11 @@ from torch.sagemaker.distributed.checkpoint.state_dict_utils import (
 )
 from torch.sagemaker.utils import utils as tsm_utils
 
-smddp_available = True
-try:
-    import smdistributed.dataparallel.torch.torch_smddp  # noqa: F401
-except:
-    smddp_available = False
+smddp_available = False
+# try:
+#     import smdistributed.dataparallel.torch.torch_smddp  # noqa: F401
+# except:
+#     smddp_available = False
 
 from hyperpod_nemo_adapter.constants import (
     OPTIMIZER_KEY_PREFIX,
