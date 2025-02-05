@@ -48,7 +48,9 @@ from torch.sagemaker.distributed.checkpoint.state_dict_utils import (
 )
 from torch.sagemaker.utils import utils as tsm_utils
 
+logging.info("Before SMDDP flag")
 smddp_available = False
+logging.info("Flag set to false!")
 # try:
 #     import smdistributed.dataparallel.torch.torch_smddp  # noqa: F401
 # except:
